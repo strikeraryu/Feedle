@@ -1,5 +1,5 @@
-consumer_key = 'UeO0KYcWnAQ8WBsLoCErnrDWF'
-consumer_secret = 'iGQXN6umrBh45nB5PxwoAuWXHhzHulPheqL14wMjhtplP5U8BT'
+consumer_key = ''
+consumer_secret = ''
 
-access_token = '3514498392-xfzJtj03Y2xSqks8BuPk1F0dcsXTyJ5zDd8yI1H'
-access_tkn_secret = 'BJ02Hn3ISemQi3dWpIJVEBj4SMSObDjQKIvOJDnC5ldcP'
+access_token = ''
+access_tkn_secret = ''
