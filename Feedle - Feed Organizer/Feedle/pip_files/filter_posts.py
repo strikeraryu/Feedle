@@ -157,7 +157,7 @@ def get_filt_posts(user_priority):
 
     #to store posts
 
-    #twitter_client.get_home_timeline(limit)     # <---uncomment this line to activate twitter features
     #twitter_client = twitter_client()           # <---uncomment this line to activate twitter features
+    #twitter_client.get_home_timeline(limit)     # <---uncomment this line to activate twitter features
 
     return filt_post
