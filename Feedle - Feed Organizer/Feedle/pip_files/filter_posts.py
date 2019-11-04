@@ -154,9 +154,10 @@ def get_filt_posts(user_priority):
                         filt_post['twitter'].append(temp)
 
     limit = 10
-    twitter_client = twitter_client()
 
-    #to store the posts
-    twitter_client.get_home_timeline(limit)
+    #to store posts
+
+    #twitter_client = twitter_client()           //uncomment this line to activate twitter features
+    #twitter_client.get_home_timeline(limit)     //uncomment this line to activate twitter features
 
     return filt_post
