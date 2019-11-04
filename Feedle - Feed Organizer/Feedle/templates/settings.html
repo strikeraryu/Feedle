@@ -1,0 +1,76 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Feedle - Settings</title>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="{% static 'css/settings.css' %}" />
+</head>
+
+<body>
+
+    <div class="centerdiv">
+        <form action="/setting_chng/" class="set-menu" method="post">{% csrf_token %}
+            <input type="text" class="inputbox" placeholder="Name" name="name" value="{{ name }}"> <br>
+            <input type="text" class="inputbox" placeholder="About" name="about" maxlength="20" value="{{ about }}"><br>
+            <input type="date" class="inputbox" placeholder="DOB" name="DOB" value="{{ dob }}"><br>
+            <input type="text" placeholder="Status" class="statusbox" name="status" value="{{ status }}"><br>
+            <input type="submit" class="button" value="Save">
+        </form><br>
+
+        <div class="mode">
+            <div class="mode-title">Mode</div>
+            <form action="/mode_prof/">
+                <input class="mode-btn" type="submit" value="Professional">
+            </form>
+            <form action="/mode_edu/">
+                <input class="mode-btn" type="submit" value="Educational">
+            </form>
+            <form action="/mode_per/">
+                <input class="mode-btn" type="submit" value="Personal">
+            </form>
+        </div>
+    </div>
+
+    <h1 class="title">{{ title }}</h1>
+    <div class="todo-list">
+        <div class="todo-header">
+            <h2 class="list-title">{{mode}}</h2>
+        </div>
+
+        <div class="todo-body">
+            <div class="tasks">
+                {% for user in user_priority %}
+                <div class="task">
+                    <form action="/del_user/{{ user }}/" method="post">{% csrf_token %}
+                        <input type="submit" class="btn create" value="-">
+                        <div>{{ user }}</div>
+                    </form>
+                </div>
+                {% endfor %}
+            </div>
+
+            <div class="new-task-creator">
+                <form action="/add_user/" method="post">{% csrf_token %}
+                    <input type="text" class="new task" placeholder="New user" name="new_user">
+                    <input type=submit class="btn create" value="+">
+                </form>
+            </div>
+        </div>
+
+        <div class="new-div">
+            <form action='/loading/'>
+                <input class="button" type="submit" value="Feed">
+            </form><br>
+            <form action="/profile/{{ username }}/">
+                <input class="button" type="submit" value="Profile">
+            </form>
+        </div>
+
+</body>
+
+</html>

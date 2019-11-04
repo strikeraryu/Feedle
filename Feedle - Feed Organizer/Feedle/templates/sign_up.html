@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Feedle - Feed organizer</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/sign_up.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+
+<body>
+    <div class="bgimg">
+        <div class="centerdiv">
+            <img src="https://cdn1.iconfinder.com/data/icons/flat-business-icons/128/user-128.png" id="profilepic">
+            <h2>Sign UP</h2>
+            {% if chk == 0 %}
+            <div class="error">*username already exists</div>
+            {% endif %}
+            <form action="/reg/" method="post">{% csrf_token %}
+                <input type="text" class="inputbox" placeholder="Name" name="name" required><br>
+                <input type="text" class="inputbox" placeholder="Username" name="username" required><br>
+                <input type="email" class="inputbox" placeholder="Email" name="email" required><br>
+                <input type="password" class="inputbox" placeholder="Password" name="password" minlength="8"
+                    maxlength="16" required><br>
+                <input type="submit" class="button" value="Sign up">
+            </form>
+            <div class="txt">Already have a account</div>
+            <form action="/login/">
+                <input type="submit" class="button" value="Login">
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

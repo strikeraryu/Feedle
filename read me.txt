@@ -1,0 +1,86 @@
+1. Getting started
+
+		
+	1.1. Intallation
+	
+	 There should be python installed and python path should be added in enviroment variabels.
+	 Then install 4 modules django, requests, bs4, tweepy through below commands.
+	 pip install django
+	 pip install requests
+	 pip install bs4
+	 pip install tweepy
+
+
+
+	1.2. Making server
+
+	To make a local server you to change your directory through 'cd' command to the folder where you have "feedle - feed organizer" folder.
+	Then open "feedle" folder in "feedle - feed organizer" through below command
+	cd feedle - feed organizer
+	Then to start the server type below command
+	python manage.py runserver
+
+	Then this will be shown in your cmd
+        ------------------------------------------------------------
+	You have 17 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+	Run 'python manage.py migrate' to apply them.
+	November 04, 2019 - 09:41:18
+	Django version 2.2.6, using settings 'Feedle.settings'
+	Starting development server at http://127.0.0.1:8000/       <-------This is your url
+	Quit the server with CTRL-BREAK.
+
+	You can enter this url in your browser 
+	Now you can use the Feedle website
+        -------------------------------------------------------------
+
+
+
+
+	1.3. To add the twitter account whose profile is shown
+
+		1.3.1. getting the different keys for twitter
+		through the below process get the twitter key
+
+		1. Go to https://dev.twitter.com/apps/new and log in, if necessary
+		2. Supply the necessary required fields, accept the Terms Of Service, and solve the CAPTCHA.
+		3. Submit the form
+		4. Go to the API Keys tab, there you will find your Consumer key and Consumer secret keys.
+		5. Copy the consumer key (API key) and consumer secret from the screen into our application.
+
+		1.3.2 how to change the twitter_keys
+		Open folder with this path "Feedle - Feed Organizer\Feedle\pip_files"
+		Open Twitter_keys.py in editable format
+		add the twitter keys
+
+		twitter keys    -  variables     <----- key map
+
+		Consumer API keys - consumer_key
+		Consumer API keys secrets - consumer_secret
+		Access token - access_token
+		Access token secrets - access_tkn_secret
+
+___________________________________________________________________________________________________________________________________________________________________
+
+2. Change the Max limit of twitter post
+Open folder with this path "Feedle - Feed Organizer\Feedle\pip_files"
+Open filter_posts.py in editable format
+
+change the limit variable to desired amount
+    limit = 10                                <--------- limit variable
+    twitter_client = twitter_client()
+
+    #to store the posts
+    twitter_client.get_home_timeline(limit)
+
+___________________________________________________________________________________________________________________________________________________________________
+
+3. different hidden features of Feedle
+
+1. you can search posts by typing '!' mark followed by the username
+.
+.
+.
+There are more hidden features so keep your eyes open
+___________________________________________________________________________________________________________________________________________________________________
+
+

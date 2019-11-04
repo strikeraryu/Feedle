@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+   background: url('bg.jpg');
+}
+
+.title {
+  grid-area: header;
+  text-align: center;
+  font-size: calc(7vw + 2rem);
+  font-weight: 900;
+  color: rgba(0, 0, 0, 0.3);
+  letter-spacing: 2px;
+  margin: 0.1em 0 0.5em;
+}
+
+
+
+.wrapper{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 450px;
+  height: 380px;
+  display: flex;
+}
+
+.wrapper .left{
+  width: 35%;
+  background: rgba(0,0,0,0.3);
+  padding: 30px 25px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  text-align: center;
+  color: #fff;
+}
+
+.wrapper .left img{
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.wrapper .left h4{
+  margin-bottom: 10px;
+}
+
+.wrapper .left p{
+  font-size: 12px;
+}
+
+.wrapper .right{
+  width: 65%;
+  background: #fff;
+  padding: 30px 25px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.wrapper .right .info,
+.wrapper .right .projects{
+  margin-bottom: 25px;
+}
+
+.wrapper .right .info h3,
+.wrapper .right .projects h3{
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e0e0e0;
+    color: #353c4e;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.wrapper .right .info_data,
+.wrapper .right .projects_data{
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper .right .info_data .data,
+.wrapper .right .projects_data .data{
+  width: 45%;
+}
+
+.wrapper .right .info_data .data h4,
+.wrapper .right .projects_data .data h4{
+    color: #353c4e;
+    margin-bottom: 5px;
+}
+
+.wrapper .right .info_data .data p,
+.wrapper .right .projects_data .data p{
+  font-size: 13px;
+  margin-bottom: 10px;
+  color: #919aa3;
+}
+
+.wrapper .social_media ul{
+  display: flex;
+}
+
+.wrapper .social_media ul li a{
+  color :#fff;
+  display: block;
+  font-size: 18px;
+}
+
+.button{
+  width:  60px;
+  height: 25px;
+  display: block;
+  margin: auto;
+  color: white;
+  background-color: rgb(0, 151, 230);
+  border: none;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+}
+
+.back_btn{
+  display: flex;
+  flex-direction: row;
+}
+.button:hover{
+     background-color:rgb(0, 168, 255) ;
+     font-size: 15px;     
+   }

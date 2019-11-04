@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Feedle - Profile</title>
+    <link rel="stylesheet" href="{% static 'css/user_profile.css' %}">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+</head>
+
+<body>
+    <h1 class="title">Profile</h1>
+    <div class="wrapper">
+        <div class="left">
+            <img src="/static/css/profile.png" alt="user" width="100">
+            <h4>{{ user_profile.name }}</h4>
+            <p>{{ user_profile.about }}</p>
+        </div>
+        <div class="right">
+            <div class="info">
+                <h3>Information</h3>
+                <div class="info_data">
+                    <div class="data">
+                        <h4>Email</h4>
+                        <p>{{ user_profile.email }}</p>
+                    </div>
+                    <div class="data">
+                        <h4>Username</h4>
+                        <p>{{ username }}</p>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="projects">
+                <h3>Status</h3>
+                <div class="projects_data">
+                    {{ user_profile.status }}
+                </div>
+            </div>
+            <div class="back_btn">
+                <form action='/loading/'>
+                    <input class="button" type="submit" value="Feed">
+                </form>
+                <form action="/settings/">
+                    <input class="button" type="submit" value="Settings">
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

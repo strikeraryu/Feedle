@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Feedle - Feed organizer</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+
+<body>
+    <div class="bgimg">
+        <div class="centerdiv">
+            <img src="https://cdn1.iconfinder.com/data/icons/flat-business-icons/128/user-128.png" id="profilepic">
+            <h2>login</h2>
+            {% if chk == 0 %}
+            <div class="error">*user name or password is wrong</div>
+            {% endif %}
+            <form action="/valid/" method="post">{% csrf_token %}
+                <input type="text" class="inputbox" placeholder="Username" name="log_username" required><br>
+                <input type="password" class="inputbox" placeholder="Password" name="log_password" required><br>
+                <input type="submit" class='button' value="Login">
+            </form>
+            <div class="txt">New here, don't have a account</div>
+            <form action="/sign_up/">
+                <input type="submit" class="button" value="Sign up">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

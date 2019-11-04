@@ -1,0 +1,136 @@
+{
+  "profiles": {
+    "temp": {
+      "password": "3456789:3gjr8",
+      "name": "temp",
+      "email": "temp@temp.com",
+      "user_priority_prof": [],
+      "user_priority_edu": [
+        "albert einstein",
+        "Marilyn Monroe",
+        "J.K. Rowling"
+      ],
+      "user_priority_per": [],
+      "mode": "edu",
+      "dob": "",
+      "status": "Hey, I am new here",
+      "about": "About",
+      "First_login": false
+    },
+    "Holaman": {
+      "password": "vkpmwocp3gjr8",
+      "name": "Mr. Hola",
+      "email": "hola@m.com",
+      "user_priority_prof": [
+        "Schwarzenegger"
+      ],
+      "user_priority_edu": [],
+      "user_priority_per": [],
+      "mode": "prof",
+      "dob": "2019-11-16",
+      "status": "Hey, I am new here",
+      "about": "I am a risk taker",
+      "First_login": false
+    },
+    "satwik@1": {
+      "password": "3456789:;3gjr8",
+      "name": "SATWIK",
+      "email": "satwiksingh123@gmail.com",
+      "user_priority_prof": [
+        "albert einstein",
+        "Schwarzenegger",
+        "J.K. Rowling",
+        "Marilyn Monroe"
+      ],
+      "user_priority_edu": [],
+      "user_priority_per": [
+        "adsfsdf",
+        "Schwarzenegger"
+      ],
+      "mode": "prof",
+      "dob": "",
+      "status": "Hey, I am new here",
+      "about": "About",
+      "First_login": false
+    },
+    "tanya": {
+      "password": "3456789:3gjr8",
+      "name": "tanya",
+      "email": "tanya@temp.com",
+      "user_priority_prof": [
+        "Marilyn Monroe"
+      ],
+      "user_priority_edu": [
+        "albert einstein",
+        "Schwarzenegger"
+      ],
+      "user_priority_per": [
+        "J.K. Rowling"
+      ],
+      "mode": "prof",
+      "dob": "2019-11-15",
+      "status": "call only, busy",
+      "about": "Devloper",
+      "First_login": false
+    },
+    "striker": {
+      "password": "ct{w8223:3gjr8",
+      "name": "Aryamaan jain",
+      "email": "striker.aryu56@feedle.com",
+      "user_priority_prof": [
+        "elon musk",
+        "times of india",
+        "devfolio",
+        "Cumberbitches"
+      ],
+      "user_priority_edu": [
+        "albert einstein",
+        "J.K. Rowling",
+        "freecodecamp",
+        "Marilyn Monroe"
+      ],
+      "user_priority_per": [
+        "rick and morty",
+        "AskAlmanac",
+        "Dharmen98040490"
+      ],
+      "mode": "prof",
+      "dob": "2000-03-27",
+      "status": "Wubba Lubba Dub Dub",
+      "about": "Student",
+      "First_login": false
+    },
+    "ds123": {
+      "password": "3456789:3gjr8",
+      "name": "dharmendra",
+      "email": "ds123@feedle.com",
+      "user_priority_prof": [],
+      "user_priority_edu": [],
+      "user_priority_per": [],
+      "mode": "prof",
+      "dob": "",
+      "status": "DND",
+      "about": "Student",
+      "First_login": false
+    },
+    "greg": {
+      "password": "ccccc7773gjr8",
+      "name": "Sheershak",
+      "email": "greg@feedle.com",
+      "user_priority_prof": [
+        "Schwarzenegger",
+        "Marilyn Monroe",
+        "adsfsdf"
+      ],
+      "user_priority_edu": [
+        "albert einstein"
+      ],
+      "user_priority_per": [],
+      "mode": "edu",
+      "dob": "2002-06-27",
+      "status": "Wubba Lubba Dub Dub",
+      "about": "singer",
+      "First_login": false
+    }
+  }
+}

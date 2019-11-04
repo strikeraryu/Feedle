@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Feedle - Feed</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/feed.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+
+<body>
+    <div class="nav-bar">
+        <nav>
+            <div class="logo">
+                <img src="/static/css/feedle_logo.png">
+                <h1>Feedle</h1>
+            </div>
+
+            <div class="new-task-creator">
+                <form action="/search/" method="post">{% csrf_token %}
+                    <input type="text" class="new task" placeholder="Search" name="username">
+                    <input type=submit class="btn create" value="">
+                </form>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li>
+                        <form action="/profile/{{ username }}/">
+                            <input class="menu-btn" type="submit" value="Profile">
+                        </form>
+                    </li>
+                    <li>
+                        <form action="/settings/">
+                            <input class="menu-btn" type="submit" value="Settings">
+                        </form>
+                    </li>
+                    <li>
+                        <form action="/logout/">
+                            <input class="menu-btn" type="submit" value="Log Out">
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+    <header>
+        <h1 class="title">{{ mode }}</h1>
+        <div class="centerdiv">
+            {% for web,posts in all_post.items %}
+            {% for post in posts %}
+            <div class="feed-div">
+                <div class='feed-header'>
+                    <img src="/static/css/profile.png" class="img">
+                    <div class="userdetails">
+                        <h4 class="user">{{ post.user }}</h4><br>
+                        <h4 class="website">{{ post.website }}</h4>
+                    </div>
+                </div>{{ post.content }}
+            </div>
+            {% endfor %}
+            {% endfor %}
+        </div>
+    </header>
+</body>
+
+</html>

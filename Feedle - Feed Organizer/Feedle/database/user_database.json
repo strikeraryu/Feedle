@@ -1,0 +1,53 @@
+{
+  "users": [
+    {
+      "temp": {
+        "name": "temp",
+        "password": "3456789:3gjr8",
+        "email": "temp@temp.com"
+      }
+    },
+    {
+      "Holaman": {
+        "name": "Mr. Hola",
+        "password": "vkpmwocp3gjr8",
+        "email": "hola@m.com"
+      }
+    },
+    {
+      "satwik@1": {
+        "name": "SATWIK",
+        "password": "3456789:;3gjr8",
+        "email": "satwiksingh123@gmail.com"
+      }
+    },
+    {
+      "tanya": {
+        "name": "tanya",
+        "password": "3456789:3gjr8",
+        "email": "tanya@temp.com"
+      }
+    },
+    {
+      "striker": {
+        "name": "Aryamaan jain",
+        "password": "ct{w8223:3gjr8",
+        "email": "striker@feedle.com"
+      }
+    },
+    {
+      "ds123": {
+        "name": "dharmendra",
+        "password": "3456789:3gjr8",
+        "email": "ds123@feedle.com"
+      }
+    },
+    {
+      "greg": {
+        "name": "Sheershak",
+        "password": "ccccc7773gjr8",
+        "email": "greg@feedle.com"
+      }
+    }
+  ]
+}

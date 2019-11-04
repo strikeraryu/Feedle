@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Feedle - Feed organizer</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="site-header clearfix">
+        <nav>
+            <div class="logo">
+                <img src="/static/css/feedle_logo.png">
+                <h1>Feedle</h1>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <form action="/home/" class="">
+                            <input type="submit" class="menu-btn" value="Home">
+                        </form>
+                    </li>
+                    <li>
+                        <form action="/sign_up/" class="">
+                            <input type="submit" class="menu-btn" value="Sign up">
+                        </form>
+                    </li>
+                    <li>
+                        <form action="/login/" class="">
+                            <input type="submit" class="menu-btn" value="Login">
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <section>
+            <div class="leftside">
+                    <img src="/static/css/home2.png">
+            </div>
+            <div class="rightside">
+                <h1>Feedle - Feed organizer</h1><br>
+                <p>Organise all feed with one click and manage all your feed <br> as you want. We will do all your hard
+                    word of managing <br> your feed, So you can save each moment of your time</p><br>
+                <form action="/sign_up/">
+                    <input type="submit" class="btn" value="Get Started">
+                </form>
+            </div>
+
+        </section>
+
+    </header>
+
+
+</body>
+
+</html>
